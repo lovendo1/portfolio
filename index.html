@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Lovendo Danuartha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Website Profile </h1>
+        <p>Holaa! Selamat datang di website profile saya 👋</p>
+    </header>
+    <nav>
+        <a href="index.html" class="active">🏠 Home</a>
+        <a href="profil.html">👤 Profil</a>
+        <a href="kontak.html">📬 Kontak</a>
+    </nav>
+    <main>
+        <div class="card">
+            <div class="foto-area">
+                <img src="foto profil.jpeg" alt="Foto Lovendo Danuartha" id="fotoProfil">
+                <h2>Lovendo Danuartha 👋</h2>
+                <p>Mahasiswa Teknik Informatika</p>
+            </div>
+            <p style="text-align:center; color:#666; font-size:14px; line-height:1.8; max-width:480px; margin:0 auto;">
+                Saya Lovendo, mahasiswa yang lagi semangat semangatnya belajar ngoding
+                Suka utak-atik website dan sesekali main game kalau tugas lagi baik hati 😄
+            </p>
+            <div class="tombol-area">
+                <a href="profil.html" class="btn btn-biru">👤 Lihat Profil</a>
+                <a href="kontak.html" class="btn btn-kuning">📬 Hubungi Saya</a>
+            </div>
+        </div>
+        <div class="card">
+            <h2>Skill Sedang Dipelajari</h2>
+            <div class="skill-item">
+                <div class="skill-label">
+                    <span>Python</span>
+                    <span>60%</span>
+                </div>
+                <div class="skill-track">
+                    <div class="skill-bar" style="background:#3b82f6;" data-lebar="60"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-label">
+                    <span>HTML</span>
+                    <span>53%</span>
+                </div>
+                <div class="skill-track">
+                    <div class="skill-bar" style="background:#facc15;" data-lebar="53"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-label">
+                    <span>CSS</span>
+                    <span>47%</span>
+                </div>
+                <div class="skill-track">
+                    <div class="skill-bar" style="background:#34d399;" data-lebar="47"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-label">
+                    <span>JavaScript</span>
+                    <span>33%</span>
+                </div>
+                <div class="skill-track">
+                    <div class="skill-bar" style="background:#f87171;" data-lebar="33"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div id="modalFoto" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="imgModal">
+    </div>
+    <footer>
+        <p>Dibuat oleh <span>Lovendo Danuartha</span> — 2026</p>
+    </footer>
+    <script>
+        window.addEventListener('load', function() {
+            var bars = document.querySelectorAll('.skill-bar');
+            setTimeout(function() {
+                bars.forEach(function(bar) {
+                    bar.style.width = bar.dataset.lebar + '%';
+                });
+            }, 300);
+        });
+        var modal = document.getElementById('modalFoto');
+        var img = document.getElementById('fotoProfil');
+        var modalImg = document.getElementById('imgModal');
+        var span = document.getElementsByClassName('close')[0];
+        img.onclick = function(){
+            modal.style.display = 'block';
+            modalImg.src = this.src;
+        }
+        span.onclick = function() {
+            modal.style.display = 'none';
+        }
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

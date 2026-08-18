@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil - Lovendo Danuartha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Website Profile </h1>
+        <p>Holaa! Selamat datang di website profile saya 👋</p>
+    </header>
+    <nav>
+        <a href="index.html">🏠 Home</a>
+        <a href="profil.html" class="active">👤 Profil</a>
+        <a href="kontak.html">📬 Kontak</a>
+    </nav>
+    <main>
+        <div class="card">
+            <h2>Data Diri</h2>
+            <div class="info-baris">
+                <span class="info-label">Nama</span>
+                <span class="info-nilai">Lovendo Danuartha</span>
+            </div>
+            <div class="info-baris">
+                <span class="info-label">NIM</span>
+                <span class="info-nilai">2403015061</span>
+            </div>
+            <div class="info-baris">
+                <span class="info-label">Universitas</span>
+                <span class="info-nilai">Universitas Muhammadiyah Prof.Dr.Hamka</span>
+            </div>
+            <div class="info-baris">
+                <span class="info-label">Jurusan</span>
+                <span class="info-nilai">Teknik Informatika</span>
+            </div>
+            <div class="info-baris">
+                <span class="info-label">Asal</span>
+                <span class="info-nilai">Jakarta Timur, DKI Jakarta</span>
+            </div>
+        </div>
+        <div class="card">
+            <h2>Tentang Saya</h2>
+            <p style="font-size:14px; color:#555; line-height:1.9;">
+                Saya Lovendo Danuartha, mahasiswa Teknik Informatika semester 5 di Universitas Muhammadiyah Prof.Dr.Hamka.
+                Mulai tertarik dunia komputer waktu SMA, iseng belajar dari YouTube dan ternyata seru banget!
+                <br><br>
+                Sekarang lagi fokus belajar pemrograman web. Masih sering bingung pas ketemu bug,
+                tapi justru itu yang menjadi sensasi buat ngoding 😄. Pengen terus berkembang dan suatu saat bisa
+                bikin aplikasi yang bermanfaat untuk banyak orang.
+            </p>
+        </div>
+        <div class="card">
+            <h2>Portofolio</h2>
+            <p style="font-size:14px; color:#555; line-height:1.9;">
+                Berikut adalah beberapa sertifikat yang saya peroleh selama perjalanan belajar saya dibangku perkuliahan.
+            </p>
+            <div style="text-align:center; margin-top:20px;">
+                <img src="sertif.jpeg" alt="Sertifikat 1 Lovendo Danuartha" id="fotoSertif" style="max-width:400px; cursor:pointer; border-radius:10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin-bottom:20px;">
+                <br>
+                <img src="sertif 2.jpeg" alt="Sertifikat 2 Lovendo Danuartha" id="fotoSertif2" style="max-width:400px; cursor:pointer; border-radius:10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            </div>
+        </div>
+        <div class="card">
+            <h2>Jurnal Saya</h2>
+            <p style="font-size:14px; color:#555; line-height:1.9;">
+                Berikut adalah beberapa jurnal yang telah saya buat.
+            </p>
+            <div style="display:flex; flex-direction:column; gap:15px; margin-top:20px;">
+                <a href="https://www.researchgate.net/publication/387940251_Keamanan_Siber_Kombinasi_Antara_Analisis_Statis_dan_Dinamis_Untuk_Mendeteksi_Ransomware_Secara_Real-_Time" target="_blank" class="jurnal-link" style="display:block; padding:15px; background:#f0f8ff; border:2px solid #3b82f6; border-radius:10px; text-decoration:none; color:#333; transition:background 0.3s;">
+                    <div style="display:flex; align-items:center;">
+                        <span style="font-size:24px; margin-right:15px;"></span>
+                        <div>
+                            <strong>Jurnal 1: Keamanan Siber</strong><br>
+                            <small>Kombinasi Antara Analisis Statis dan Dinamis Untuk Mendeteksi Ransomware Secara Real-Time</small>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://conference.ut.ac.id/index.php/fusion/article/view/4773#pkp_content_main" target="_blank" class="jurnal-link" style="display:block; padding:15px; background:#f0f8ff; border:2px solid #3b82f6; border-radius:10px; text-decoration:none; color:#333; transition:background 0.3s;">
+                    <div style="display:flex; align-items:center;">
+                        <span style="font-size:24px; margin-right:15px;"></span>
+                        <div>
+                            <strong>Jurnal 2: Strategy Protecting Networking System from Trojan using Firewall and Encryption Data</strong><br>
+                            <small>Link ke conference.ut.ac.id</small>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="card">
+            <h2>Hobi Saya</h2>
+            <p style="font-size:13px; color:#888; margin-bottom:4px;">Klik untuk selengkapnya!</p>
+            <div class="hobi-wrapper">
+                <span class="badge" onclick="showHobi(this)" data-title="Coding" data-text="Saat ini saya sedang mempelajari struktur HTML, CSS, Python, dan JavaScript untuk membuat website interaktif." data-image="coding.jpg">Coding</span>
+                <span class="badge" onclick="showHobi(this)" data-title="Main Game" data-text="Game membantu saya belajar logika, strategi, dan juga refreshing." data-image="game.jpg">Main Game</span>
+                <span class="badge" onclick="showHobi(this)" data-title="Dengerin Musik" data-text="Musik membuat suasana belajar lebih rileks dan fokus untuk mengerjakan project." data-image="musik.jpg">Dengerin Musik</span>
+                <span class="badge" onclick="showHobi(this)" data-title="Nonton Film" data-text="Nonton film jadi hiburan ringan dan juga memberi inspirasi." data-image="film.jpeg">Nonton Film</span>
+                <span class="badge" onclick="showHobi(this)" data-title="Ngopi" data-text="Ngopi atau nongkrong menjadi hiburan yang membuat mood saya naik karena saat nongkrong kami saling bertukar cerita." data-image="nongs.jpeg">Ngopi</span>
+            </div>
+        </div>
+        <div class="cita">
+            <p>
+                <strong>Cita-Cita saya:</strong> Jadi Software Engineer di perusahaan teknologi
+                dan suatu saat nanti punya startup sendiri. Masih jauh sih, tapi SEMANGATT! 💪
+            </p>
+        </div>
+    </main>
+    <div id="modalHobi" class="modal">
+        <div class="modal-content image-modal">
+            <span class="close" onclick="closeHobi()">&times;</span>
+            <h2 id="hobiTitle"></h2>
+            <p id="hobiText"></p>
+            <img id="hobiImg" src="" alt="Skema hobi">
+            <p style="margin-top:16px; color:#555; font-size:14px;"></p>
+        </div>
+    </div>
+    <div id="modalSertif" class="modal">
+        <span class="close" id="closeSertif">&times;</span>
+        <img class="modal-content" id="imgSertifModal">
+    </div>
+    <footer>
+        <p>Dibuat oleh <span>Lovendo Danuartha</span> — 2026</p>
+    </footer>
+    <script>
+        function showHobi(element) {
+            document.getElementById('hobiTitle').textContent = element.dataset.title;
+            document.getElementById('hobiText').textContent = element.dataset.text;
+            document.getElementById('hobiImg').src = element.dataset.image;
+            document.getElementById('modalHobi').style.display = 'block';
+        }
+        function closeHobi() {
+            document.getElementById('modalHobi').style.display = 'none';
+        }
+        window.addEventListener('click', function(event) {
+            var modal = document.getElementById('modalHobi');
+            if (event.target == modal) {
+                closeHobi();
+            }
+        });
+        var modalSertif = document.getElementById('modalSertif');
+        var imgSertif = document.getElementById('fotoSertif');
+        var imgSertif2 = document.getElementById('fotoSertif2');
+        var modalImgSertif = document.getElementById('imgSertifModal');
+        var spanSertif = document.getElementById('closeSertif');
+        imgSertif.onclick = function(){
+            modalSertif.style.display = 'block';
+            modalImgSertif.src = this.src;
+        }
+        imgSertif2.onclick = function(){
+            modalSertif.style.display = 'block';
+            modalImgSertif.src = this.src;
+        }
+        spanSertif.onclick = function() {
+            modalSertif.style.display = 'none';
+        }
+        window.addEventListener('click', function(event) {
+            if (event.target == modalSertif) {
+                modalSertif.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
